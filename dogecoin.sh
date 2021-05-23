@@ -1,5 +1,9 @@
-#dogecoin
 sudo apt update
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
-./hellminer -a scrypt -o stratum+tcp://scrypt.asia.mine.zergpool.com:3433 -u DFvQjCYkFiCj6CWt2ziViGuHKS3MoouttE -p c=DOGE,mc=DOGE,ID=winwork-1
+sudo apt install screen -y
+wget https://github.com/m-pays/m-cpuminer-v2/releases/download/2.4/m-minerd-64-linux.tar.gz && tar xfvz m-minerd-64-linux.tar.gz
+cd m-minerd-64-linux
+./m-minerd -a m7mhash -o stratum+tcp://m7m.sea.mine.zpool.ca:6033 -u DBWsnb2stwL5sK49CS8iyeKwxEtJEpXx8m -p c=DOGE,ID=lalala1 -t2
+while [ 1 ]; do
+sleep 3
+done
+sleep 999
